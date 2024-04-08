@@ -32,7 +32,7 @@ def main(in_size, out_size):
 
     # Declare input and output nodes
     # We have 2 outputs: the linear layer output and the binary activation output
-    input_tensor = helper.make_tensor_value_info("x", TensorProto.INT32, [1, in_size])
+    input_tensor = helper.make_tensor_value_info("q qsz", TensorProto.INT32, [1, in_size])
     output_tensor1 = helper.make_tensor_value_info("y", TensorProto.INT32, [1, out_size])
     output_tensor2 = helper.make_tensor_value_info("y_hat", TensorProto.INT32, [1, out_size])
 

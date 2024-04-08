@@ -1,2 +1,3 @@
 /OXTC/*
 *.onnx
+/c_model/*
